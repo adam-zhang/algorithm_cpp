@@ -10,5 +10,9 @@ public:
 	~BubbleSort();
 public:
 	virtual void sort(std::vector<int>& value);
+	virtual std::string name()
+	{
+		return "Bubble Sort";
+	}
 };
 #endif//__BUBBLESORT__H

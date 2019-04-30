@@ -5,6 +5,7 @@
 #include <ctime>
 #include "BubbleSort.h"
 #include "InsertSort.h"
+#include "SelectSort.h"
 #include "Counter.h"
 
 using namespace std;
@@ -45,6 +46,7 @@ int main(int argc, char** argv)
 	vector<shared_ptr<Sort>> vsort;
 	vsort.push_back(make_shared<BubbleSort>());
 	vsort.push_back(make_shared<InsertSort>());
+	vsort.push_back(make_shared<SelectSort>());
 	for_each(vsort.begin(), vsort.end(), [&v](shared_ptr<Sort>& sorter)
 			{
 				Counter counter;

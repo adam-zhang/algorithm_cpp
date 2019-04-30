@@ -11,5 +11,7 @@ public:
 	~SelectSort();
 public:
 	void sort(std::vector<int>&);
+	std::string name()
+	{ return "Select Sort"; }
 };
 #endif//__SELECTSORT__H

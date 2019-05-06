@@ -4,5 +4,6 @@ set(sources main.cpp
 	BubbleSort.cpp
 	InsertSort.cpp
 	SelectSort.cpp
+	QuickSort.cpp
 	Counter.cpp)
 add_executable(${PROJECT_NAME} ${sources})
